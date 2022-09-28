@@ -1,0 +1,187 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+<section>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="steps">
+                <progress id="progress" value=0 max=100></progress>
+                <div class="step-item">
+                    <button class="step-button text-center" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="false">
+                    </button>
+                    <div class="step-title">
+
+                        Initial
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="false">
+                    </button>
+                    <div class="step-title">
+                        Design
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="false">
+                    </button>
+                    <div class="step-title">
+                        Feasibility Test
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="false">
+                    </button>
+                    <div class="step-title">
+                        Realese
+                    </div>
+                </div>
+                @*<div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="false">
+                    </button>
+                    <div class="step-title">
+                        MQ1
+                    </div>
+                </div>*@
+                @*<div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive" onclick="false">
+                    </button>
+                    <div class="step-title">
+                        TS
+                    </div>
+                </div>*@
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+    <input type="hidden" id="statusItem" value="Realese" />
+    @*<span id="statusItem">@status.n_stg_stage</span>*@
+
+    @*<input type = "hidden" value = "@status.n_stg_stage" id="statusItem"/>*@
+
+
+<style>
+    :root {
+        --prm-color: #0381ff;
+        --prm-gray: #b1b1b1;
+    }
+    /*  unnecessary */
+    body {
+    }
+
+    section {
+        width: 100%;
+    }
+    /*  unnecessary finished*/
+
+    /* CSS */
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .step-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--prm-gray);
+        transition: .4s;
+    }
+
+        .step-button[aria-expanded="true"] {
+            width: 60px;
+            height: 60px;
+            background-color: var(--prm-color);
+            color: #fff;
+        }
+
+    .done {
+        background-color: var(--prm-color);
+        color: #fff;
+    }
+
+    .step-item {
+        z-index: 10;
+        text-align: center;
+    }
+
+    #progress {
+        -webkit-appearance: none;
+        position: absolute;
+        width: 95%;
+        z-index: 5;
+        height: 10px;
+        margin-left: 18px;
+        margin-bottom: 18px;
+    }
+
+        /* to customize progress bar */
+        #progress::-webkit-progress-value {
+            background-color: var(--prm-color);
+            transition: .5s ease;
+        }
+
+        #progress::-webkit-progress-bar {
+            background-color: var(--prm-gray);
+        }
+</style>
+<script>
+    var status = document.querySelector("#statusItem").value;
+    var statusID = getStatusID(status);
+    animateBola(statusID);
+
+    function animateBola(index) {
+        const stepButtons = document.querySelectorAll(".step-button");
+        const progress = document.querySelector("#progress");
+
+        progress.setAttribute(
+            "value",
+            (index * 100) / (stepButtons.length - 1)
+        ); //there are 3 buttons. 2 spaces.
+
+        stepButtons.forEach((item, secindex) => {
+            if (index >= secindex) {
+                item.classList.add("done");
+            }
+            if (index < secindex) {
+                item.classList.remove("done");
+            }
+        });
+    }
+
+    function getStatusID(status) {
+        if (status == 'Initial') {
+            return 0;
+        }
+        else if (status == 'Design') {
+            return 1;
+        }
+        else if (status == 'Feasibility Test') {
+            return 2;
+        }
+        else if (status == 'Realese') {
+            return 3;
+        } else if (status == 'MQ1') {
+        //    return 4;
+        //} else if (status == 'TS') {
+        //    return 5;
+        //}
+    }
+</script>
+
+

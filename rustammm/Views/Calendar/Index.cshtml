@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/assets/lib/main.css" rel="stylesheet" />
+<script src="~/assets/lib/main.js"></script>
+@*<script src="~/assets/js/jquery-ui.custom.min.js"></script>
+    <script src="~/assets/js/moment.min.js"></script>*@
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+                left: /*'/*prev,next today*/ '',
+                center: 'title',
+                right: /*'dayGridMonth,timeGridWeek,timeGridDay'*/'prev,next today'
+            },
+            /*initialDate: '2020-09-12',*/
+            navLinks: true, // can click day/week names to navigate views
+            /*  selectable: true,*/
+            selectMirror: true,
+            select: function (allDay) {
+                var allDay = prompt('Event Title:');
+                if (allDay) {
+                    calendar.addEvent({
+                        allDay: allDay
+
+                    })
+                }
+                calendar.unselect()
+            },
+            @*eventClick:
+                    function (info) {
+                        info.jsEvent.preventDefault();
+                        //sch_task = info.sch_projnum;
+                        //console.log(info.event.url);
+                        var projNum = info.event.url;
+                        window.open(`@Url.Action("DetailCalendar", "Calendar")/${projNum}`);
+                        //window.open("DetailCalendar/" + allDay, "_self");
+                },*@
+                //    function (arg) {
+                //        if (confirm('Click Ok If You Want To See Detail'))
+                //        {
+                //        arg.event.remove()
+                //        }
+                //},
+
+
+            editable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: {
+
+                url: "/Calendar/findAll",
+
+
+
+            },
+
+        });
+
+        calendar.render();
+    });
+
+</script>
+<style>
+
+    body {
+        /* margin: 40px 10px;*/
+        padding: 0;
+        font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    #calendar {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+</style>
+<div class="table-responsive">
+    <div id='calendar'>
+
+    </div>
+</div>
+

@@ -1,0 +1,124 @@
+﻿@model IEnumerable<rustammm.Models.AllProduct>
+
+@{
+    ViewBag.Title = "AllProductt";
+}
+<link href="~/additional-file/datatabe/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="~/additional-file/datatabe/scroll.css" rel="stylesheet" />
+
+<center>
+    <h2>ALL PRODUCT</h2>
+</center>
+<div class="table-responsive">
+    <table id="myTable" class="table table-hover table-borderless" border="1">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    <center>
+                        POJNUM
+
+                    </center>
+
+                </th>
+                <th>
+                    <center>
+                        TOYNUM
+
+                    </center>
+
+                </th>
+                <th>
+                    <center>
+                        ASSTNUM
+
+                    </center>
+
+                </th>
+                <th>
+                    <center>
+                        TOY DESC
+
+                    </center>
+
+                </th>
+
+                <th>
+                    <center>
+                        TL
+
+                    </center>
+
+                </th>
+                <th>
+                    <center>
+                        Total Tool
+
+                    </center>
+                </th>
+
+                <th>
+                    <center>
+                        DETAIL
+                    </center>
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(modelItem => item.pd_projnum)
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(modelItem => item.pd_toynum)
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(modelItem => item.pd_asstnum)
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(modelItem => item.pd_toydesc)
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            @item.sch_date.Value.ToShortDateString()
+                            @*@Html.DisplayFor(modelItem => item.sch_date)*@
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(modelItem => item.TotalTool)
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <a href="@Url.Action("Detail",  new { pd_toynum = item.pd_toynum, pd_projnum = item.pd_projnum })"><center><i class="fas fa-edit text-info text-center"></i></center></a>
+
+
+                        </center>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section scripts{
+    <script src="~/additional-file/datatabe/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+}
+

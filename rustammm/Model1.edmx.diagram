@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="42c79dd8d97a4c25aebafc74101e3db6" Name="Diagram1">
+        <EntityTypeShape EntityType="proddevModel.acc_assy" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_cate" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_fit" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_newtool" Width="1.5" PointX="8.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_part" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_photo" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_stdcost" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.acc_variant" Width="1.5" PointX="7.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.activity_log" Width="1.5" PointX="10.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.data_log" Width="1.5" PointX="11.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.dt_cat" Width="1.5" PointX="7.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.dt_det" Width="1.5" PointX="12.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.dt_photo" Width="1.5" PointX="14.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.dt_sub" Width="1.5" PointX="10" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.dt_subdet" Width="1.5" PointX="15.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.failed_jobs" Width="1.5" PointX="12.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fb_lib" Width="1.5" PointX="14.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_concern" Width="1.5" PointX="5.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_DCCheck" Width="1.5" PointX="16.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_MECheck" Width="1.5" PointX="17.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_PECheck" Width="1.5" PointX="17.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_QECheck" Width="1.5" PointX="18.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_response" Width="1.5" PointX="18.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_TACheck" Width="1.5" PointX="5.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fmea_TECheck" Width="1.5" PointX="19.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.IM_ApprovedBy" Width="1.5" PointX="19.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.IM_Master" Width="1.5" PointX="19.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.jfr_PL_7777" Width="1.5" PointX="20.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.masterTE_sample" Width="1.5" PointX="20.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.material" Width="1.5" PointX="0.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.migration" Width="1.5" PointX="2.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.mmm_ApprovedBy" Width="1.5" PointX="7.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.mmm_data" Width="1.5" PointX="9.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.ntd_attach" Width="1.5" PointX="21.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.ntd_members" Width="1.5" PointX="11.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.ntd_stage" Width="1.5" PointX="21.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.ntd_text" Width="1.5" PointX="21.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_alltoy" Width="1.5" PointX="22.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_dtm" Width="1.5" PointX="13.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_grup" Width="1.5" PointX="22.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_input" Width="1.5" PointX="15.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_issues" Width="1.5" PointX="21.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_MECTL" Width="1.5" PointX="23.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_meeting" Width="1.5" PointX="23.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_member" Width="1.5" PointX="23.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_notes" Width="1.5" PointX="17.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_photo" Width="1.5" PointX="23.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_resin" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_schedule" Width="1.5" PointX="23.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_skintone" Width="1.5" PointX="24.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_torsotype" Width="1.5" PointX="0.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_toytype" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pd_user" Width="1.5" PointX="2.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pkg_cat" Width="1.5" PointX="9.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pkg_detail" Width="1.5" PointX="14.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pkg_photo" Width="1.5" PointX="16.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.pkg_sub" Width="1.5" PointX="12" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.PrintReq" Width="1.5" PointX="4.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.rc_sculpt" Width="1.5" PointX="24.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.rc_variant" Width="1.5" PointX="6.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_char" Width="1.5" PointX="25.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_fb" Width="1.5" PointX="25.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_meth" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_method" Width="1.5" PointX="25.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_pat" Width="1.5" PointX="3" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_pict" Width="1.5" PointX="25.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_sp" Width="1.5" PointX="25.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sw_spt" Width="1.5" PointX="0.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.sysdiagram" Width="1.5" PointX="25.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.TE_ToolTf" Width="1.5" PointX="25.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.TE_ToolTf_Checklist" Width="1.5" PointX="26.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.TE_ToolTf_Mtrl_Apprv" Width="1.5" PointX="17.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.Toolreq" Width="1.5" PointX="19.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.user" Width="1.5" PointX="21.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fep_dsa" Width="1.5" PointX="27.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.fep_qa" Width="1.5" PointX="27.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.password_resets" Width="1.5" PointX="8.75" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proddevModel.ptmi_tools" Width="1.5" PointX="10.75" PointY="28.375" IsExpanded="true" />
+        <AssociationConnector Association="proddevModel.acc_assy_acc_assy_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_variant_acc_variant_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_part_acc_part_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_newtool_acc_newtool_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_newtool_acc_newtool_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_variant_acc_variant_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_part_acc_part_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_photo_acc_photo_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.acc_variant_acc_variant_ibfk_3" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_det__cat_id__60924D76" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_sub__cat_id__57FD0775" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_subdet__cat_i__5BCD9859" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_det__sub_id__5F9E293D" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_det__subdet_i__5EAA0504" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_photo__det_id__636EBA21" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__dt_subdet__sub_i__5AD97420" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__detail_ca__packa__2F2FFC0C" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__sub_catag__packa__00750D23" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__detail_ca__sub_i__2E3BD7D3" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.FK__packaging__detai__3B95D2F1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.sw_meth_sw_meth_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proddevModel.sw_pat_sw_pat_ibfk_1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
